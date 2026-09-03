@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Conference Venue Map</h1>
+
+    <svg width="700" height="500" viewBox="0 0 700 500">
+        
+        <rect x="50" y="60" width="600" height="300" fill="lightgray" stroke="black" stroke-width="2"/>
+        <rect x="200" y="310" width="280" height="50" fill="lightblue" stroke="black" stroke-width="2"/>
+        <rect x="200" y="60" width="280" height="50" fill="lightblue" stroke="black" stroke-width="2" />
+        <rect x="50" y="150" width="50" height="120" fill="pink" stroke="black" stroke-width="2" />
+        <circle cx="350" cy="210" r="80" fill="purple" stroke="black" id="circle"/>
+
+        <text x="280" y="85" font-size="24">Food Area</text>
+        <text x="280" y="350" font-size="24">Registration area</text>
+        <text x="50" y="200" font-size="20">Stage</text>
+        <text x="300" y="210" font-size="24"  id="textChange" >Workshop</text>
+
+    </svg>
+
+    <script>
+        const textElement = document.getElementById("textChange") 
+
+        textElement.addEventListener("click", function(){
+            textElement.textContent = "text changed"
+            textElement.style.fill = "pink"
+        })
+
+        const circle = document.getElementById("circle");
+        circle.addEventListener("click", function() {
+        circle.setAttribute("cx", "450");
+        circle.setAttribute("cy", "250");
+    });
+
+    </script>
+
+</body>
+</html>

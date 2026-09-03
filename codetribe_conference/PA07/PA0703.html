@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="url"> </p>
+    <p id="width"></p>
+    <p id="language"></p>
+    <p id="status"></p>
+
+    <script>
+//current url
+    const url=window.location
+        document.getElementById("url").innerHTML=url;
+
+
+
+//screen width
+    const width= window.innerWidth
+        document.getElementById("width").innerHTML=width
+
+
+//Browser language
+        const language=navigator.language
+        document.getElementById("language").innerHTML = language
+
+//Online/off status
+
+        console.log(navigator.online)
+
+        if(navigator.online){
+            document.getElementById("status").innerHTML="We are online"
+
+        }else{
+            document.getElementById("status").innerText="We are offline"
+        }
+
+    </script>
+
+    
+
+
+</body>
+</html>

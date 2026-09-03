@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        #dropArea{
+            width: 300px;
+            height: 200px;
+            border: 3px dashed pink;
+            line-height: 180px;
+            margin:20px;
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <h2> Drop Image Here</h2>
+
+    <div id="dropArea"> </div>
+
+        <p id="fileinfo">
+        </p>
+
+
+    <script>
+        // Handle dropped file
+        const dropArea = document.getElementById("dropArea")
+        dropArea.addEventListener("dragover", function(event){
+            event.preventDefault()
+            dropArea.innerHTML = "Release the image"
+        })
+
+        // handle dropped file
+        const fileInfo = document.getElementById("fileinfo")
+        dropArea.addEventListener("drop", function(){
+            event.preventDefault();
+            const file = event.dataTransfer.files[0];
+
+            fileInfo.innerHTML = "File name:" + file.name
+
+
+        })
+    </script>
+
+  </body>
+</html>

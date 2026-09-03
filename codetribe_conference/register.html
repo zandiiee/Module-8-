@@ -1,0 +1,119 @@
+<!--- PA0101-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Register</title>
+        <link rel="stylesheet" href="./css/style.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <h1> Codetribe Conference 2026</h1>
+            <nav>
+            <button><a href="about.html"> About</a></button> 
+           <button><a href="index.html"> Register</a></button>
+           <button><a href="venue.html"> Venue</a></button>
+            </nav>
+            </header>
+       
+       
+
+         <main>
+        <section class="register-info">
+            <h1> Welcome to the Codetribe Conference</h1>
+            <h2> 
+                Register to take part in the Codetribe Conference.
+            </h2>
+            <!--PA0301-->
+            <section>
+                <form id="form">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <br/>
+                    <br/>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" >
+                    <br/>
+                    <br/>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" maxlength="10" required>
+                    <br/>
+                    <br/>
+                    <label for="age"> Age</label>
+                    <input type="number" id="age" name="age"  required>
+                    <br/>
+                    <br/>
+                   <label for="province">Enter your province</label>
+                    <select id="province" name="province" required>
+                        <option value="">-- Select Province --</option>
+                        <option value="northern-cape">Northern Cape</option>
+                        <option value="western-cape">Western Cape</option>
+                        <option value="free-state">Free State</option>
+                        <option value="gauteng">Gauteng</option>
+                        <option value="eastern-cape">Eastern Cape</option>
+                        <option value="north-west">North West</option>
+                        <option value="limpopo">Limpopo</option>
+                    </select>
+                    <br/>
+                    <br/>
+                     <label for="interest">Conference Interest:</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">-- Select Conference Interest --</option>
+                         <option value="web-development">Web development</option>
+                        <option value="artificial-intelligence">Artificial Intelligence</option>
+                        <option value="software-development">Software Development</option>
+                    </select>
+                    <br/>
+                    <br/>
+                     <label for="attendance">Attendance Type:</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="">-- Select Attendance Type --</option>
+                         <option value="in-person">In Person</option>
+                        <option value="online">Online</option>
+                    </select>
+                    
+                    <br/>
+                    <br/>
+                    <!-- PA0303-->
+                    <button type="submit" onclick="validateForm()">Register Now</button>
+
+                </form>
+                <!--- END OF PA0301-->
+            </section>
+
+            <section id="why">
+                <h2> Why should I register?</h2>
+                 <article>
+                    <h2> Learning oppurtunies</h2>
+                    <p> This is an oppurtunity to learn more and develop new skills.</p>
+                 </article>
+
+                 <article>
+                    <h2>Networking </h2>
+                    <p>
+                        Meet new people and create new connections.
+                    </p>
+                 </article>
+                 <article>
+                    <h2> Growth</h2>
+                    <p>
+                        Discover new opportunities.
+                    </p>
+                 </article>
+            </section>
+       
+        </section>
+
+        </main>
+        <footer>
+            <p> @Codetribe Conference 2026</p>
+        </footer>
+
+        <script src="app.js"></script>
+
+    </body>
+
+
+</html>

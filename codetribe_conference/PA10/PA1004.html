@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge</title>
+</head>
+<body>
+    <canvas id="myCanva" width="400" height="150" style="border: 1px solid black"></canvas>
+
+    <script>
+        const mycanva = document.getElementById("myCanva")
+        const ctx = mycanva.getContext("2d")
+
+        // Draw rectangle
+            ctx.fillStyle = "pink";
+            ctx.fillRect(0, 0, 400, 500)
+    
+        ctx.fillStyle="darkgreen"
+        ctx.font = "bold 20px Arial";
+        ctx.textAlign = "center";
+        ctx.fillText("GLOBAL WOMEN IN TECH CON 2026", 190, 30);
+        
+        //speaker name
+
+        ctx.fillStyle = "black";
+        ctx.font = "bold 16px Arial";
+        ctx.fillText("Prof. Zandile Zulu", 190, 80);
+
+        //speaker topic
+        ctx.fillStyle = "black";
+        ctx.font = "bold 16px Arial";
+        ctx.fillText(" Cyber security lead at Google", 190, 100);
+      
+
+    </script>
+
+</body>
+</html>
