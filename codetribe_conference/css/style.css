@@ -153,6 +153,7 @@ header{
     border-radius: 50px;
     box-shadow: 5px 5px 10px gray;
 }
+/* PA0507*/
 #about-top{
     display:flex;
 }
