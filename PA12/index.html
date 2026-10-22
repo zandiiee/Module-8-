@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CodeTribe WebSocket</title>
+  </head>
+
+  <body>
+    <h1>CodeTribe WebSocket</h1>
+
+    <!-- PA1201: Connection Status -->
+
+    <h2>Connection Status</h2>
+
+    <h3 id="status">Disconnected</h3>
+
+    <!-- PA1202: Receive Messages -->
+
+    <h2>Received Message</h2>
+
+    <p id="message">Waiting for message...</p>
+
+    <!-- PA1203: Send Messages -->
+
+    <h2>Send Message</h2>
+
+    <input type="text" id="userMessage" placeholder="Enter a message" />
+
+    <!-- PA1204: Different Message Types -->
+    
+    <h2>Select Message Type</h2>
+
+    <select id="messageType">
+      
+      <option value="chat">Chat</option>
+      
+      <option value="notification">Notification</option>
+      
+      <option value="announcement">Announcement</option>
+      
+    </select>
+
+    
+    <p>
+      Select a message type, type your message above, and click
+      Send. 
+    </p>
+
+    <button id="sendBtn">Send</button>
+
+    
+    <p id="sendStatus"></p>
+
+    
+    <script src="./app.js"></script>
+  </body>
+</html>
